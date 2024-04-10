@@ -1,0 +1,112 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-image: url('https://img.freepik.com/free-vector/dark-blue-memphis-facebook-story-background-vector_53876-162121.jpg?t=st=1710009785~exp=1710013385~hmac=8de241cf91d0055dfe699479784104c828d6757b53d3ab27fe5872d455704b84&w=360');
+   background-size: cover;
+}
+
+.container{
+   padding: 20px;
+   margin: 20px auto;
+   max-width: 600px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+   text-align: center;
+   margin-bottom: 20px;
+   background-color: #fff;
+}
+
+form{
+   margin-bottom: 20px;
+}
+
+label{
+   display: block;
+   margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],select{
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   box-sizing: border-box;
+}
+
+input[type="date"]{
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   box-sizing: border-box;
+}
+
+input[type="radio"]{
+   display: inline-block;
+   margin-right: 10px;
+}
+
+label[for="male"],
+label[for="female"]{
+   display: inline-block;
+   margin-right: 20px;
+}
+
+button{
+   padding: 10px 20px;
+   background-color: #4648c9;
+   color: white;
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+button:hover{
+   background-color: #3638ac;
+
+}
+
+p{
+   margin-bottom: 10px;
+
+}
+
+input[type="text"]:focus,input[type="number"]:focus,select:focus{
+   outline: none;
+   border-color: #007bff;
+   box-shadow: 0 0 5px rgba(0 ,123, 255, 0.5);
+
+}
+
+@media screen and (max-width: 768px){
+   .container{
+      padding: 10px;
+   }
+   .header, .navbar, .footer{
+      padding: 5px;
+   }
+   .content{
+      padding: 10px;
+   }
+}
+
+@media screen and(max-width: 480px) {
+   .container{
+      padding: 5px;
+   }
+   .header, .navbar, .footer{
+      padding: 3px;
+   }
+   .content{
+      padding: 5px;
+   }
+}
+

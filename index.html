@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h2>Student Registration Form</h2>
+        <div class="container">
+            <form id="studentForm" onsubmit="return validateForm()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+            <label for="rollNo">Roll No:</label>
+            <input type="text" id="rollNo" name="rollNo" required><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" max="<?php echo date('Y-m-d'); ?>" required><br><br>
+            <label for="hobbies">Hobbies (comma-separated):</label>
+            <input type="text" id="hobbies" name="hobbies"><br><br>
+            <label for="mobileDevice">Mobile Device:</label>
+            <select id="mobileDevice" name="mobileDevice" required>
+                <option value="">Select device</option>
+                <option value="iOS">iOS</option>
+                <option value="Android">Android</option>
+            </select><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+        <div class="container">
+            <h2>Get Student Information</h2>
+            <form id="getStudent">
+                <div id="form-group">
+                    <label for="rollNumber">Enter the Roll Number:</label>
+                    <input type="text" name="rollNumber" id="rollNumber" required>
+                </div>
+                <button type="submit">Get</button>
+            </form>
+            <div id="output"></div>
+        </div>
+</body>
+<script src="main.js"></script>
+</html>
